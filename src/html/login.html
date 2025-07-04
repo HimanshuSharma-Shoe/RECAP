@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    GoOut!
+  </title>
+  <script type='module' src="../javascript/theme.js" async>//handles colourblind mode
+  </script>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="/icon-512.png">
+  <link id="themesheet" rel="stylesheet" href="../../style.css">
+  <script type='module' src="../javascript/login.js" async>//handles all login related functionality
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <button id="colourBlind">Colorblind Mode</button>
+    </nav>
+    <main>
+      <header>
+        <h1>
+          GoOut!
+        </h1>
+      </header>
+      <section>
+        <h2>
+          Login
+        </h2>
+        <p>
+          Please enter your email and password to log in
+        </p>
+        <form id="loginForm">
+          <input type="email" id="emailIn" placeholder="Email" required maxlength='40' autofocus>
+          <input type="password" id="passwordLogin" required placeholder="Password" required maxlength='40'>
+          <button id='submitLogin' type="submit">Login</button>
+        </form>
+        <div id="loginMessage" class="errorMessage"></div>
+      </section>
+      <section>
+        <h3>
+          Sign up
+          </h2>
+          <p>
+            Don't have an account? Get started by making one now!
+          </p>
+          <form id="signUpForm">
+            <input type="email" id="emailUp" placeholder="Email" required maxlength='40'>
+            <input type="password" id="passwordCreate" placeholder="Password" required maxlength='40'>
+            <button id='submitSignUp' type="submit">Sign Up</button>
+          </form>
+          <div id="signUpMessage" class="errorMessage"></div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

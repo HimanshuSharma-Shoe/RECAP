@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    GoOut!
+  </title>
+  <script type='module' src="../javascript/theme.js" async>//handles colourblind mode
+  </script>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="/icon-512.png">
+  <link id="themesheet" rel="stylesheet" href="../../style.css">
+  <script type='module' src="../javascript/main.js" async>//handles all main page related functionality
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <button id="colourBlind">Colorblind Mode</button>
+    </nav>
+    <main>
+      <header>
+        <h1>
+          GoOut!
+        </h1>
+      </header>
+      <section>
+        <h2>
+          What shall we do today?
+        </h2>
+        <p>
+          Only one way to find out!
+        </p>
+        <p>
+          <input type="button" id="generateActivity" value="Generate Activity">
+        </p>
+        <p id="output"></p>
+      </section>
+    </main>
+    <main>
+      <main>
+        <section>
+          <header>
+            <h2>
+              Settings
+            </h2>
+            <p>
+              Want to logout? Just hit the button below.
+            </p>
+            <p>
+              <button id='logout' type="submit">Logout</button>
+            </p>
+            <p>
+              Want to change your interests? On you go!
+            </p>
+            <p>
+              <button id='InterestReturn' type="submit">Interests</button>
+            </p>
+            <p>
+              Want to delete your account? Careful, no going back!
+            </p>
+            <p>
+              <button id='deleteAccount' type="submit">Remove account</button>
+            </p>
+            <div id="deleteMessage" class="errorMessage"></div>
+          </header>
+        </section>
+      </main>
+      <main>
+        <section>
+          <header>
+            <h2>
+              PWA's are cool!
+            </h2>
+            <p>
+              We highly recommend you to install this app on your device for a much better experience.
+            </p>
+            <p>
+              <button id='installButton' type="submit">Install Now!</button>
+            </p>
+          </header>
+        </section>
+      </main>
+    </main>
+  </div>
+</body>
+
+</html>

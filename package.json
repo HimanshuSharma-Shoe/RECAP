@@ -1,0 +1,32 @@
+{
+  "name": "mobileappresitdev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rear.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HimanshuSharma-Shoe/MobileAppResitDev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/HimanshuSharma-Shoe/MobileAppResitDev/issues"
+  },
+  "homepage": "https://github.com/HimanshuSharma-Shoe/MobileAppResitDev#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "firebase": "^11.9.1",
+    "http-server": "^14.1.1",
+    "openai": "^5.8.2"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  }
+}

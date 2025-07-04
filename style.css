@@ -1,0 +1,181 @@
+body {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 420px;
+  margin: 40px auto;
+  background: rgba(22, 19, 19, 0.97);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(161, 16, 64, 0.18);
+  padding: 32px 28px 28px 28px;
+}
+
+h1, h2, h3 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: rgba(44, 44, 44, 0.85);
+  padding: 18px 14px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 24px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #23272b;
+  color: #e0e0e0;
+  font-size: 1em;
+  margin-bottom: 6px;
+  outline: none;
+  transition: background 0.2s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  background: #2d3238;
+}
+
+input[type="radio"] {
+  accent-color: #00bfae;
+  margin-right: 8px;
+}
+
+label {
+  font-size: 1.08em;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+button,
+input[type="button"] {
+  background: linear-gradient(90deg, #00bfae 0%, #1de9b6 100%);
+  color: #232526;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 0;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 8px;
+  box-shadow: 0 2px 8px rgba(0,191,174,0.08);
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+button:hover,
+input[type="button"]:hover {
+  background: linear-gradient(90deg, #1de9b6 0%, #00bfae 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.03);
+}
+
+p {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 18px;
+}
+
+#output {
+  background: rgba(44, 44, 44, 0.85);
+  border-radius: 10px;
+  padding: 18px;
+  margin: 18px auto 0 auto;
+  max-width: 420px;
+  min-height: 40px;
+  font-size: 1.15em;
+  color: #00e676;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  word-break: break-word;
+}
+
+.errorMessage {
+  color: #ff5252;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: #00e676;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 48px auto 0 auto;
+  background: rgba(30, 34, 40, 0.98);
+  border-radius: 22px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.22), 0 1.5px 8px rgba(0,0,0,0.12);
+  padding: 36px 30px 30px 30px;
+  backdrop-filter: blur(2px);
+  border: 1.5px solid rgba(255,255,255,0.08);
+  transition: box-shadow 0.2s;
+}
+
+.container:hover {
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.28), 0 2px 12px rgba(0,0,0,0.16);
+}
+
+.radioButtons {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.radioButtons:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.radioButtons input[type="radio"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 98vw;
+    padding: 14px 4vw;
+    margin: 12px auto 0 auto;
+  }
+}
