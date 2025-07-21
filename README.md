@@ -1,8 +1,22 @@
 Dependencies include:
 
-npm - serve - for front end local host
-node - for backend - express.js - back end is hosted simply through node.index.js
-all dependencies relating to individual modules
+.npm
+.node
 
+technologies used:
 
-packaged backend contains server code
+.html  -  plain js  -  in the front end
+.express js  -  plain js  -  in the back end
+
+hosting:
+
+front end was hosted use npm
+The inbuilt command "serve" was used to local host
+back end was hosted using node
+The inbuilt command "node.index.js" was used to host the main back end server file
+
+NOTES:
+
+all API keys have been removed
+OpenAI API has inbuilt environment variable reading. So dotenv was not used to read the API key
+PACKAGED-BACKEND.ZIP contains all files relating to the back end stack
